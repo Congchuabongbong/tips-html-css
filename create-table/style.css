@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    padding: 50px;
+}
+/* 
+.table-data {
+    border: 1px solid black;
+} */
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+}
+
+table,
+td,
+th {
+    text-align: left;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    padding: 15px;
+}
+th {
+    font-weight: 700;
+}

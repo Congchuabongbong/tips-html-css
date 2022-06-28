@@ -1,0 +1,21 @@
+1. text-align (inherit) 
+-> căn chỉnh ra giữa theo chiều ngang
+
+2. line-height (inherit)
+-> căn chỉnh ra giữa theo chiều dọc
+=> cho line-height của phần tử con bằng chiều cao phần tử cha
+=> Hoặc có thể để phần tử cha có line-height = height
+
+3. using display: flex
+b1. Cho phần tử cho có thuộc tính display: flex 
+b2. phần tử con có thuộc thính margin: auto; 
+=> có thể căn chỉnh cho nhiều phần tử con
+Note: Hoặc có thể sử dung align-items(cross-axis) và  justify-content(main-axis)
+
+4.using position and transform: translateX() & translateY()
+b1. Cho phần tử cha position: anything(not static)
+b2. phần tử con sử dụng top/bottom + right/left 
+b3.  phần tử con sử dụng sử dụng translateX() & translateY() trừ đi chiều cao thừa của chính nó 
+
+=> Trong trường hợp sử dụng thuộc tính giữa phần tử cha và con có sử thay đổi 
+thì nên đặt biến local hoặc global

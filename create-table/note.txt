@@ -1,0 +1,12 @@
+** Tạo bảng trong html
+-Bảng dùng để hiển thị dữ liệu bảng
+-Bảng có hàng, cột, ô
+** Create table in html 
+-table : Bao quanh bảng
+-tr: Hàng của bảng
+-td: Cột của bảng
+-thead: Tiêu đề của bảng
+-body: Thân bảng
+-tfoot: Chân bảng
+**Css for table
+

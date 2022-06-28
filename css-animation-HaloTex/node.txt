@@ -1,0 +1,42 @@
+*I.CSS Transition : cấu hình thay đổi thời gian chuyển tiếp giữa các trạng thái của element
+->  4 thuộc tính chính
+**1. transition-property: (name-property1) (name-property2) ...;
+-> Liệt kê các element muốn chuyển động animation
+**2. transition-duration: time-duration-property1 time-duration-property2 ...;
+->Thời gian hiệu ứng animation sẽ được execute 
+-> Nếu time-duration ít hơn transition-property thì time-duration của transition-property thiếu sẽ được tính từ time-duration đầu tiên.
+**3.transition-delay: time-delay;
+->Thời gian trễ trước khi animation execute 
+**4.transition-timing-function: cubic-bezier() ~ ease-out-transition-property1,ease-out-transition-property2 ...;
+-> thay đổi vận tốc hiệu ứng thay đổi animation các thời điểm khác nhau! 
+!note: refer doc: cubic-bezier.com
+**shortcut: transition: transition-property transition-duration transition-timing-function
+-> transition-property = all (áp dụng animation cho tất cả các property)
+
+
+**II. Animation: 
+**1 animation-name: my-animation1, my-animation2...,
+-> name animation 
+**2 animation-duration: time-duration1, time-duration2...,
+-> Thời gian animation kết thúc
+**3 animation-interation-count: (times) or infinite(vô cực)
+-> Số lần animation thực hiện
+**4 animation-direction : alternate:
+-> thay đổi hướng animation sau khi kết thúc
+**5 animation-delay: time-delay1, time-delay2
+-> Thời gian trễ của animation
+**6 animation-timing-function: 
+-> thay đổi vận tốc hiệu ứng thay đổi animation các thời điểm khác nhau! 
+*@keyframes my-function {
+    from ~ 0% {
+
+    }
+    20%,
+    30%,... -> 100%
+    to ~ 100%{
+
+    }
+}
+*/
+ 
+

@@ -1,0 +1,16 @@
+I.Trong responsive có hai khái niệm:
+* mobile first
+->Ban dầu sẽ code cho mobile trước rồi đến desktop(Từ màn hình nhỏ -> lớn). 
+* desktop first
+->Ban dầu sẽ code cho desktop trước rồi đén mobile(Từ màn hình lớn -> nhỏ).
+
+II. Break point: 
+=> Là những cột mốc của các thiết bị.
+* Những break point hay gặp : 
+1.320px
+2.480px
+3.768px
+4.Tablet ~ 768px-> 1024
+5.Desktop nhỏ 1024- 1280 
+6.Desktop thông thường (1280px - 1366px);
+7.Desktop -> 1440px và 1440px -> 1600 px/1920px

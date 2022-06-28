@@ -1,0 +1,23 @@
+** Khái niệm cần nắm :
+A. CSS GRID
+=> Giống như cái lưới, bao gồm các đường giao nhau dọc và ngang => tạo thành hàng (row) và cột (column).
+=> Khác với Flexbox chỉ tạo layout theo mô hình là một chiều (one dimension) thì css grid tạo layout theo mô hình hai chiều (two dimension) => css grid có thể sắp xếp layout bất kì đâu trên grid.
+B. Những thành phần trong css grid: 
+1. Grid-container 
+2. Trong grid sẽ có rows và columns và được tạo ra bởi GRID TRACK (rãnh)
+3. Mỗi GRID TRACK được tạo ra bởi 2 GRID LINE (lề trên và lề dưới)
+4. Các GRID LINE khi giao nhau sẽ tạo ra GRID CELL => đơn vị nhỏ nhất trong css grid
+5. GRID AREA: là một hình chữ nhật và có thể quy định hình chữ nhật sẽ chiếm bao nhiêu column/row
+** 
+1. grid-template-columns
+=> Định nghĩa grid container có bao nhiêu cột và chiều rộng của mỗi cột 
+=> Nếu không định nghĩa số row thì css grid sẽ tự động tạo ra row khi số lượng grid-item lớn hơn số cột.
+=> Nếu không định nghĩa row thì height của column sẽ set theo chiều cao của grid-item có height nhất (height của colum ~ width row và ngược lại)
+2.grid-template-rows: 
+=> Định nghĩa grid container có bao nhiêu hàng và chiều cao của mỗi hàng
+3.Fragment (fr-tương đối)
+=> css grid cung cấp 1 giá trị tuyệt đối cho 1fr
+=> các phần tử sắp xếp mặc định khi các cột được lấp đầy thì sẽ xuống hàng tiếp theo
+4.grid-auto-rows:
+=> Nếu trong trường hợp không set rows cho grid thì grid sẽ tự động tạo ra khi các grid-item xuống dòng(khi số cột < số item) thì grid-auto-rows sẽ dùng để xác định chiều cao cho row
+=> css grid cung cấp minmax(value1, value2) vd: minmax(60px,auto) : chiều cao nhỏ nhất là 60px, chiều cao tối đa lấy theo grid-item có chiều cao lớn nhất => giúp linh hoạt hơn và ko bị hard-code;

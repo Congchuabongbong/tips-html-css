@@ -1,0 +1,13 @@
+/* mobile first */
+@media screen and (min-width: 1280px) {
+    /*Nếu  chiều rộng lớn hoặc bằng 1280px thì code ở đây sẽ được chạy */
+}
+
+/* desktop first */
+@media screen and (max-width: 767px) {
+    /*  Nếu chiều rộng nhỏ hơn hoặc bằng 767 thì code ở đây sẽ được chạy 
+        Lưu ý break point cho mobile sẽ trừ đi 1
+    
+    */
+
+}

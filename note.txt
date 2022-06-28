@@ -1,0 +1,71 @@
+I. grid-template-columns : column-size column-size column-size ...;
+=> Chia số cột
+=> track line = số cột + 1
+=> track line bắt đầu từ số 1
+Note: Nếu bắt đầu từ trái -> phải là số dương, ngược lại từ phải sang trái là số âm
+
+II. grid-gap: grid-row-gap grid-column-gap;   
+-> gap: khoảng trống 
+-> grid-row-gap: khoảng trống giữa các hàng
+-> grid-column-gap: khoảng trống giữa các cột
+=> gap count(số khoảng trống) : column - 1;
+=> fr = free space (gần giống vs flex-grow) : sẽ chiếm hết các khoảng trống. đơn vị hay dùng với grid
+=> khi dùng fr sẽ luôn tự tính toán gap sao cho các phần tử bằng nhau ko có scroll ngang
+III. Phân bố layout-item : 
+grid-column-start: line-start;
+grid-column-end: line-end;
+=> shorthand :
+grid-column: track-line-start/ track-line-end : grid-item trải dài từ track nào đến đâu theo cột
+grid-row: track-line-start/ track-line-end : grid-item trải dài từ track nào đến đâu theo hàng
+
+=> span + số cột/hàng sẽ chiếm lấy; grid-row: 1/3 ~ 1/ span 2 (từ 1 lấy 2 hàng)
+                                    grid-column: 1/3 ~ 1/ span 2 (từ 1 lấy 2 cột)
+
+
+IV. grid-template-areas for parent && grid-area for child
+=> căn chỉnh layout một cách trực quan hơn.
+=> Dàn layout nhanh hơn
+
+=> Cách khắc phục các layout bằng nhau cho dù khác dòng:
+1. sử dụng flex-layout kết hợp để khắc phục 
+2. Để căn chỉnh các layout grid bằng nhau giữa các row sử dụng đơn vị fr 
+3. Tuỳ chỉnh sử dụng kết hợp flexbox
+
+=> grid-template-columns : repeat(số cột, giá trị)
+=> grid-template-columns : repeat(auto-fit, giá trị) => lấp đầy khoảng trống 
+=> grid-template-columns : repeat(auto-fill, giá trị) => cố gắng fill đủ cột
+
+----------------------------------------------------------------
+Inline vs block
+I.Inline
+=> inline có độ rộng bằng nội dung mà nó chứa
+=> Nếu có nhiều thẻ inline nằm với nhau thì nó sẽ nằm trên một hàng ngang
+=> Bị hạn chế về css
+=> thường dùng vơi chữ ngắn 
+II. Block
+=> Có độ rộng full phần tử chứa nó 
+=> Nếu nhiều thẻ block nằm cùng cấp với nhau sẽ rớt xuống dòng
+=> văn bản thì dùng với block
+
+-------------------------------------------------------------------------- 
+With auto vs 100%
+-> auto with = 100% - margin;
+-> 100% with = 100% + margin;
+-------------------------------------------------------------------------- 
+margin và transform 
+
+-------------------------------------------------------------------------- 
+ CSS Selectors và Combinators
+-> + : Liền kề 
+-> ~ : cùng cấp 
+-> > con trực tiếp 
+-> :first-child : con trực tiếp đầu tiên
+-> :nth-child(number) : con trực tiếp theo thứ tự
+-> :nth-last-child(number) : con trực tiép theo thứ tụ, ngược lại với nth-child
+-> :last-child: con trực tiếp cuối cùng
+-> :first-of-type
+-> :nth-of-type()
+-> :nth-last-of-type()
+-> :last-of-type
+->
+
