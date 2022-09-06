@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary: #4ccee8;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: normal;
+    min-height: 100vh;
+    background-color: #fff;
+    color: #fff;
+}
+
+.wrapper .header {
+    z-index: 1;
+    background-color: #22242a;
+    position: fixed;
+    width: calc(100% - 0%);
+    height: 7rem;
+    display: flex;
+    top: 0;
+}
+.wrapper .header .header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 0%);
+    height: 100%;
+    padding: 0 2rem;
+}
+.wrapper .header .header-menu .title {
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.wrapper .header .header-menu .title span {
+    color: var(--primary);
+}
+.wrapper .header .header-menu .sidebar-btn {
+    position: absolute;
+    color: #fff;
+    margin-left: 24rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s linear;
+}
+
+.wrapper .header .header-menu .sidebar-btn:hover {
+    color: var(--primary);
+}
+.wrapper .header .header-menu ul {
+    display: flex;
+}
+.wrapper .header .header-menu ul li a {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+.wrapper .header .header-menu ul li:hover a {
+    background: var(--primary);
+    color: #fff;
+}
+
+.wrapper .sidebar {
+    z-index: 1;
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    width: 25rem;
+    height: calc(100% - 9%);
+    background-color: #2f323a;
+    transition: width 0.2s linear;
+    overflow-y: auto;
+}
+.wrapper .sidebar .sidebar-menu {
+    overflow: hidden;
+}
+.wrapper .sidebar .sidebar-menu .profile img {
+    margin: 2rem 0;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.wrapper .sidebar .sidebar-menu .profile p {
+    color: #bbb;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.wrapper .sidebar .sidebar-menu .item {
+    width: 100%;
+    overflow: hidden;
+}
+.wrapper .sidebar .sidebar-menu .menu-btn {
+    position: relative;
+    display: block;
+    color: #fff;
+    padding: 2.5rem 2rem;
+    transition: color 0.3s linear;
+}
+.wrapper .sidebar .sidebar-menu .menu-btn:hover {
+    color: var(--primary);
+}
+
+.wrapper .sidebar .sidebar-menu .menu-btn i {
+    margin-right: 2rem;
+}
+.wrapper .sidebar .sidebar-menu .menu-btn .fa-caret-down {
+    float: right;
+    font-size: 1.6rem;
+    margin-top: 0.3rem;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu {
+    max-height: 0;
+    background-color: #3498d8;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a {
+    display: block;
+    position: relative;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    padding: 2rem;
+    border-bottom: 1px solid #8fc5e9;
+    transition: background 0.3s linear;
+}
+.wrapper .sidebar .sidebar-menu .item .sub-menu a:hover {
+    background-color: #55b1f0;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu i {
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+
+.wrapper .sidebar .sidebar-menu .item.active .sub-menu {
+    max-height: 50rem;
+}
+
+.wrapper.collapse .sidebar {
+    width: 7rem;
+}
+.wrapper.collapse .sidebar .profile img,
+.wrapper.collapse .sidebar .profile p,
+.wrapper.collapse .sidebar a span {
+    display: none;
+}
+.wrapper.collapse .sidebar .sidebar-menu .item .menu-btn {
+    font-size: 2.3rem;
+}
+.wrapper.collapse .sidebar .sidebar-menu .item .sub-menu i {
+    font-size: 1.8rem;
+    padding-left: 0.3rem;
+}
+.wrapper.collapse .main-container {
+    width: calc(100% - 7rem);
+    margin-left: 7rem;
+}
